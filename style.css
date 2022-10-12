@@ -1,0 +1,180 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	background: url(img/white-concrete-wall_53876-92803.webp);
+
+}
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+
+/* Header*/
+header {
+	display: flex;
+	align-items: center;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+
+.menu {
+	display: flex;
+}
+
+.menu a {
+	font-family: 'Michroma', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000;
+}
+
+nav	{
+	margin-left: 49px;
+}
+.menu li {
+	margin-right: 49px;
+	list-style-type: none;
+}
+
+.search {
+	margin-left: auto;
+}
+.b-menu {
+	display: none;
+	margin-left: auto;
+}
+
+/* First Screen*/
+.first-screen {
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	overflow: hidden
+}
+.offer {
+	width: 50%;
+}
+.car-img {
+	width: 50%;
+}
+
+.car-img img {
+	width: 100%;
+}
+
+.first-screen h1, h2, h3, p {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+}
+
+.first-screen h1 {
+	font-size: 100px;
+}
+.first-screen h2 {
+	margin-top: -20px;
+	font-family: 'Michroma', sans-serif ;
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: 0.15em
+}
+.first-screen h3 {
+	font-size: 20px;
+}
+.first-screen p {
+	margin-top: 20px;
+}
+.text {
+	margin-top: 49px;
+}
+
+
+.btn{
+	margin-top: 40px;
+	margin-bottom: 90px;
+	display: flex;
+	width: 200px;
+	background: #000;
+	font-size: 20px;
+	padding-left: 30px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	border-radius: 34.5px;
+}
+.btn a{
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+.btn img {
+	margin-left: auto;
+	padding-right: 30px;
+}
+
+
+
+
+/*Адаптив*/
+@media (max-width: 1080px) {
+	.first-screen {
+		display: block;
+		width: 100%;
+	}
+	.offer {
+		width: 100%;
+	}
+	.first-screen h1 {
+		font-size: 100px;
+	}
+	.car-img {
+		width: 100%;
+	}
+	/*Hide navigation*/
+	nav {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+	.b-menu {
+		display: block;
+	}
+
+	.video video {
+		width: 100%;
+	}
+}
+
+@media (max-width: 573px) {
+	.first-screen h1 {
+		font-size: 70px;
+	}
+	.offer h2 {
+		font-size: 22px;
+	}
+	.text p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 431px) {
+	.first-screen h1 {
+		font-size: 60px;
+	}
+	.offer h2 {
+		font-size: 18px;
+	}
+}
+
