@@ -123,7 +123,10 @@ nav	{
 	padding-right: 30px;
 }
 
-
+/*Animation*/
+.menu a:hover {
+	color: #0618bf;
+}
 
 
 /*Адаптив*/
