@@ -126,10 +126,11 @@ nav	{
 /*Animation*/
 .menu a:hover {
 	color: #0618bf;
+	transition: 0.2s;
 }
 
 
-/*Адаптив*/
+/*Adaptive*/
 @media (max-width: 1080px) {
 	.first-screen {
 		display: block;
