@@ -1,0 +1,582 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	background: url(../img/bg.webp);
+	transition: 0.5s;
+}
+
+/* DARK MODE
+///////////////////////*/
+body.active{
+	background: url(../img/bgDark.webp);
+	transition: 0.5s;
+}
+
+a.active{
+	color: #FFFFFF !important;
+}
+
+h1.active, h2.active, h6.active, h3.active, p.active {
+	color:#FFFFFF !important;
+}
+input.active{
+	color:#FFFFFF !important;
+	border-bottom: 3px #fff solid !important;
+}
+
+#card.active {
+	background:#000000 !important;
+}
+/*//////////////////////*/
+
+
+.content {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+
+/* Header*/
+header {
+	display: flex;
+	align-items: center;
+}
+h6{
+	margin: 0;
+}
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+
+.menu {
+	display: flex;
+}
+
+.menu a {
+	font-family: 'Michroma', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000;
+}
+
+nav	{
+	margin-left: 49px;
+}
+.menu li {
+	margin-right: 49px;
+	list-style-type: none;
+}
+
+
+.b-menu {
+	display: none;
+	margin-left: auto;
+}
+
+#switcher{
+	display: block;
+	position: relative;
+	background: radial-gradient(50% 73.87% at 50% 51.35%, #FFFFFF 0%, #FFFFFF 100%);
+	box-shadow: inset 0px 0px 8px 66px rgba(28, 28, 28, 0.25);
+	border-radius: 122px;
+	border-radius: 122px;
+	width: 60px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: 250px;
+	transition: 0.5s;
+}
+
+#switcher .indicator{
+	top: 0;
+	left: 0;
+	position: absolute;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: radial-gradient(207.27% 305% at 50% 50%, #FFB800 0%, #FFE091 33.79%);
+	transform: scale(0.7);
+	transition: 0.5s;
+}
+
+#switcher.active .indicator{
+	left: 30px;
+
+}
+#switcher.active{
+	background: radial-gradient(50% 73.87% at 50% 51.35%, rgba(0, 0, 0, 0.62) 0%, #000000 100%);
+	transition: 2s;
+}
+
+
+/* First Screen*/
+.first-screen {
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	overflow: hidden
+}
+.offer {
+	width: 50%;
+}
+.car-img {
+	width: 50%;
+}
+
+.car-img img {
+	width: 100%;
+}
+
+.first-screen h1, h2, h3, p {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+}
+
+.first-screen h1 {
+	font-size: 100px;
+}
+.first-screen h2 {
+	margin-top: -20px;
+	font-family: 'Michroma', sans-serif ;
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: 0.15em
+}
+.first-screen h3 {
+	font-size: 20px;
+}
+.first-screen p {
+	margin-top: 20px;
+}
+.text {
+	margin-top: 49px;
+}
+
+
+.btn{
+	margin-top: 40px;
+	margin-bottom: 90px;
+	display: flex;
+	gap: 30px;
+	width: fit-content;
+	background: #000;
+	font-size: 20px;
+	padding-left: 30px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	border-radius: 34.5px;
+}
+.btn a{
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.btn img {
+	margin-left: auto;
+	padding-right: 30px;
+}
+
+/*Second screen*/
+.performance {
+
+}
+.performance h1 {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 60px;
+	letter-spacing: 0.055em;
+	text-align: center;
+}
+
+.inform {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+.inform h3{
+	font-family: 'Michroma';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+}
+
+.power, .accel {
+	text-align: center;
+	border-right: 1px solid;
+}
+.speed {
+	text-align: center;
+}
+
+
+.data{
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-top: 16px;
+}
+.data p {
+	margin-left: 5px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.075em;
+}
+.data h6 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	letter-spacing: 0.075em;
+}
+
+/*Third screen*/
+.sound{
+	margin-top: 110px;
+	display: flex;
+}
+
+.left h1{
+	margin: 0;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 90px;
+	letter-spacing: 0.06em;
+}
+.left h2 {
+	margin-top: -12px;
+	font-family: 'Michroma';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 0.015em;
+}
+
+.left p {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.engine{
+	width: 50%;
+}
+
+.btn-engine {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 0px 15px 15px;
+	width: fit-content;
+	background: #000;
+	border-radius: 287px;
+	margin-top: 40px;
+}
+.btn-engine a{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+
+.btn-engine img {
+	margin-left: auto;
+	padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+/*ADD COMMENTS*/
+.rent{
+	margin-top: 160px;
+	display: flex;
+	justify-content: space-between;
+}
+.add {
+	max-width: 40%;
+}
+.rent h1{
+	margin: 0;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 85px;
+	letter-spacing: 0.055em;
+}
+
+.add p{
+	margin: 0;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+form div {
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	margin-bottom: 100px;
+}
+
+div input{
+	padding: 5px 5px 5px 10px;
+	border: none;
+	background: none;
+	border-bottom: 3px rgb(0, 0, 0) solid;
+	width: 100%;
+	margin: 0;
+}
+
+div p{
+	margin: 0;
+}
+
+#message input{
+	display: block;
+	border-radius: 0;
+	border: none;
+	background: none;
+	border-bottom: 3px rgb(0, 0, 0) solid;
+	width: 100%;
+}
+
+.btn-rent {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+	padding: 21px 21px 21px 21px;
+	width: fit-content;
+	background: #000;
+	border-radius: 287px;
+	margin-top: 0px;
+	margin-bottom: 170px;
+}
+.btn-rent a{
+	pointer-events: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+/*SHOW COMMENT*/
+.comments h1{
+	margin-bottom: 30px;
+}
+
+#card {
+	background: #FFFFFF;
+    box-shadow: 2px 2px 31px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 25px;
+	margin-bottom: 20px;
+}
+
+#read-more{ /*Button 'Читати більше'*/
+    display: flex !important;
+	justify-content: center;
+    gap: 8px !important;
+}
+
+#read-more a {
+	font-family: 'montserrat';
+	font-size: 18px;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+	background-color: #000;
+	padding: 25px 85px;
+}
+
+.licence{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.licence p{
+	color:#fff;
+}
+
+.ico{
+	display: flex;
+	gap: 15px;
+}
+
+
+/*Animation*/
+.menu a:hover {
+	color: #0618bf;
+	transition: 0.2s;
+}
+
+
+/*Adaptive*/
+@media (max-width: 1080px) {
+	.rent {
+		display: block;
+	}
+	.add {
+		min-width: 100%;
+	}
+	.first-screen {
+		display: block;
+		width: 100%;
+	}
+	.sound {
+		display: block;
+	}
+	.offer {
+		width: 100%;
+	}
+	.engine {
+		width: 100%;
+	}
+	.first-screen h1 {
+		font-size: 100px;
+	}
+	.car-img {
+		width: 100%;
+	}
+	/*Hide navigation*/
+	nav {
+		display: none;
+	}
+	.search {
+		display: none;
+	}
+	.b-menu {
+		display: block;
+	}
+
+	.video video {
+		width: 100%;
+	}
+}
+
+@media (max-width: 573px) {
+	.first-screen h1 {
+		font-size: 70px;
+	}
+	.offer h2 {
+		font-size: 22px;
+	}
+	.text p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 950px) {
+
+	.inform {
+		display: block;
+	}
+	.accel {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-right: none;
+		border-top: 1px solid rgb(135, 135, 135);
+		border-bottom: 1px solid rgb(135, 135, 135);
+	}
+	.power {
+		border-right: none;
+	}
+}
+
+@media (max-width: 750px) {
+	.performance h1 {
+		font-size: 40px;
+	}
+	.left h1 {
+		font-size: 60px;
+	}
+	.left h2 {
+		font-size: 20px;
+	}
+
+	.sound-line {
+		display: none;
+	}
+}
+
+@media (max-width: 495px) {
+	.left h1 {
+		font-size: 45px;
+	}
+	.left h2 {
+		font-size: 15px;
+	}
+	.btn-engine {
+		width: 200px;
+		padding: 10px;
+	}
+	.btn-engine img {
+		width: 20px;
+		height: 20px;
+		padding-right: 10px;
+	}
+	.btn-engine a {
+		font-size: 10px;
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 431px) {
+	.first-screen h1 {
+		font-size: 50px;
+	}
+	.offer h2 {
+		font-size: 18px;
+	}
+
+	.performance h1 {
+		font-size: 30px;
+	}
+}
+
